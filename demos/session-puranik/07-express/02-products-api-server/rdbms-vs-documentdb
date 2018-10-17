@@ -1,0 +1,44 @@
+RDBMS   Document DB
+Table   COllection
+Row     Document
+Field   Path
+
+// JSON
+Products collection
+{
+    "name": "Lays CHips",
+    "price": 20,
+    "plants": [
+        {
+            "code": "A",
+            "location": "Haryana"
+        },
+        {
+            "code": "B",
+            "location": "Andhra Pradesh"
+        }
+    ]
+},
+{
+    "name": "Apple iPad",
+    "price": 20000,
+    "models": [
+        {
+
+        }
+    ] 
+    
+}
+
+// Querying uses plain JS methods (in MongoDB)
+
+
+// Advantages
+- Schemaless - easy to prototype
+- Faster than RDBMS
+- Good for domains where schema for an entity cannot be well-defined
+- It is scalable - easy to cluster, easy to shard MongoDB data
+
+// Disadvantages
+- Schemaless - data integrity (involves data duplication)
+- No Transactions (no rollback) - old version

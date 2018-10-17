@@ -1,0 +1,4 @@
+node_modules/
+bower_components/
+demos/01-getting-started/lib
+02-nodejs-express/demos/session-puranik/06-streams/bigfile.txt

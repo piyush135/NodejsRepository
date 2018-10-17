@@ -1,0 +1,29 @@
+{
+  "name": "nodejs",
+  "description": "Node.js training material",
+  "main": "index.js",
+  "authors": [
+    "Prashanth Puranik"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Node.js",
+    "node",
+    "npm",
+    "training",
+    "server-side",
+    "javascript"
+  ],
+  "homepage": "https://github.com/puranik3/nodejs",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "jquery": "^3.3.1"
+  }
+}

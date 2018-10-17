@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CORS demo</title>
+    </head>
+    <body>
+        <div id="result-1"></div>
+        <div id="result-2"></div>
+        
+        <script>
+            const ajax = ( method, url, success, data ) => {
+                const xhr = new XMLHttpRequest();
+
+                xhr.onload = () => {
+                    if( xhr.status >= 200 && xhr.status < 300 ) {
+                        success( xhr.responseText );
+                    }
+                };
+
+                xhr.open( method, url );
+                xhr.send( data );
+            }
+
+            ajax( 'GET', 'http://localhost:3000/', response => document.getElementById( 'result-1' ).innerText = response );
+            
+            ajax( 'PUT', 'http://localhost:3000/', response => document.getElementById( 'result-2' ).innerText = response,  );
+        </script>
+    </body>
+</html>
